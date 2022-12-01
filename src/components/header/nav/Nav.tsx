@@ -1,16 +1,23 @@
 import React from 'react';
-import StyleNav from "./StyleNav.module.css"
+import sNav from './StyleNav.module.scss'
+
 
 export const Nav = () => {
+
     return (
-        <nav className={StyleNav.menu}>
-            <ul className={StyleNav.list}>
-                <li className={StyleNav.item}><a className={StyleNav.link} href="src/components/header/nav/Nav#">Главная</a></li>
-                <li className={StyleNav.item}><a className={StyleNav.link} href="src/components/header/nav/Nav#">Скилы</a></li>
-                <li className={StyleNav.item}><a className={StyleNav.link} href="src/components/header/nav/Nav#">Работы</a></li>
-                <li className={StyleNav.item}><a className={StyleNav.link} href="src/components/header/nav/Nav#">Контакты</a></li>
+        <nav className={sNav.menu}>
+            <ul className={sNav.list}>
+                <li className={sNav.item}><a className={sNav.link}
+                                             href="src/components/header/nav/Nav#">Home</a></li>
+                <li className={sNav.item}><a className={sNav.link}
+                                             href="src/components/header/nav/Nav#">Skills</a></li>
+                <li className={sNav.item}><a className={sNav.link}
+                                             href="src/components/header/nav/Nav#">Works</a></li>
+                <li className={sNav.item}><a className={sNav.link}
+                                             href="src/components/header/nav/Nav#">Contact</a></li>
             </ul>
         </nav>
     );
 };
+
 
